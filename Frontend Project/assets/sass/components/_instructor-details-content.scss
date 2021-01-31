@@ -1,0 +1,139 @@
+#instructor-details-content{
+    background-color: #f2f2f4;
+    padding:100px 0;
+    .img-content{
+        background-color: white;
+        box-shadow: 0px 6px 38px 0px rgba(0, 0, 0, 0.04);
+        border-radius: 10px;
+        padding:35px;
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        &::after{
+            content: "";
+            position: absolute;
+            left:0;
+            right:0;
+            width: 97%;
+            height: 15px;
+            bottom:-15px;
+            margin: 0 auto;
+            border-radius: 10px;
+            background-color: #f6f6fa;
+        }
+
+        .img{
+            width:370px;
+            height:370px;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0px 6px 42px 0px rgba(4, 4, 97, 0.12);
+            margin:0 auto;
+            img{
+                max-width: 100%;
+                height: auto;
+            }
+        }
+        .instructor-text{
+            padding-top:10px;
+            display: flex;
+            flex-direction: column;
+            .text-top{
+                display: flex;
+                justify-content: space-between;
+                .name-social{
+                    h3{
+                        color: #000000;
+                        font-size: 30px;
+                        font-weight: 700;
+                        padding-bottom: 5px;
+                        font-family:$secondary-font;
+                    }
+                    span{
+                        font-size: 18px;
+                        font-weight: 700;
+                        font-family: $secondary-font;
+                        color:#555555;
+                    }
+                    .social{
+                        margin-top:10px;
+                        a{
+                            font-size: 18px;
+                            margin-right: 15px;
+                            &:first-child{
+                                color:#3b5998;
+                            }
+                            &:nth-child(2){
+                                color:#1da1f2;
+                            }
+                            &:nth-child(3){
+                                color:#0077b5;
+                            }
+                            &:last-child{
+                                color:#5973e9;
+                            }
+                        }
+
+                    }
+                }
+                .bio{
+                    display: flex;
+                    flex-direction: column;
+                    border:2px solid #d1d1d3;
+                    border-radius: 5px;
+                    width:270px;
+                    padding:18px;
+                    span{
+                        margin-bottom: 5px;
+                        font-family: $primary-font;
+                        font-size: 16px;
+                        color:#555555;
+                        b{
+                            color:black;
+                        }
+                        i{
+                            margin-right:10px;
+                            color:#0000fe;
+                            font-family: 'Font Awesome 5 Free';
+                            font-weight: 900;
+                        }
+                    }
+
+                }
+            }
+        }
+        .content{
+            margin-top: 35px;
+            color: #555555;
+            .button{
+                margin-top:35px;
+                border:2px solid #ff5520;
+                border-radius: 30px;
+                width:150px;
+                height: 45px;
+                line-height: 40px;
+                text-align: center;
+                transition: 0.3s all ease-in-out;
+                &:hover{
+                    background-color: #ff5520;
+                    
+                    a{
+                        color:white;
+                    }
+                }
+                a{
+                    text-decoration: none;
+                    color: black;
+                    font-size:15px;
+                    font-weight: 600;
+                    font-family: $primary-font;
+                    i{
+                        font-size: 14px;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+
+}
