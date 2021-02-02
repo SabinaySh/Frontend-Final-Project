@@ -119,5 +119,16 @@
             }
         }
     }
-   
+   &.header-fixed{
+    box-shadow: 0 5px 30px rgba(0, 22, 8, 0.1);
+    -webkit-box-shadow: 0 5px 30px rgba(0, 22, 84, 0.1);
+    background: #fff;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    top: 0;
+    transition: 0.2s ease-in;
+    animation-duration: 0.5s;
+    animation-name: slideInDown;
+   }
 }

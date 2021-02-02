@@ -429,20 +429,89 @@
                 
             }
             .recent-posts{
-                // border-radius: 40px;
-                padding:35px;
-                h3{
-                    color:black;
-                }
-                .img-text{
-                    // display: flex;
-                    // justify-content: space-between;
-                    // height: 65px;
-                    // width: 65px;
-                    img{
-                    //   max-width: 100%;
+                border-radius:4px;
+                margin-top:30px;
+                position: relative;
+                background-color: white;
+               .recent{
+                        border-radius: 4px;
+                        padding:15px 30px;
+                    .title{
+                        color: black;
+                        font-size: 20px;
+                        font-family: $primary-font;
+                        font-weight: 700;
+                        padding-bottom: 14px;
+                        line-height: 1;
                     }
+                    .img-text{
+                        width: 100%;
+                        margin-bottom: 14px;
+                        display: inline-block;
+                        border: 1px solid #eef1fe;
+                        &:last-child{
+                            border-bottom: none;
+                            border-left: none;
+                        }
+                        .img{
+                            margin-right: 10px;
+                            border-radius: 4px;
+                            width: 65px;
+                            height: 65px;
+                            overflow: hidden;
+                            float: left;
+                            img{
+                                max-width: 100%;
+                            }
+                        }
+                        .text{
+                            padding:0;
+                            span{
+                                color:#888888;
+                                font-size: 14px;
+                                font-family: $primary-font;
+                            }
+                            h3{
+                                font-size: 14px;
+                                font-family: $primary-font;
+                                font-weight: 600;
+                                line-height: 1.5;
 
+                                a{
+                                    text-decoration: none;
+                                    color:black;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+            .popular-tags{
+                background-color: white;
+                margin-top:30px;
+                border-radius: 4px;
+                .tags{
+                    padding:35px 30px;
+                    h3{
+                        color:black;
+                        font-size:20px;
+                        padding-bottom: 14px;
+                        font-family: $primary-font;
+                        font-weight: 700;
+                    }
+                    .tags-list{
+                        a{
+                            text-decoration: none;
+                            margin-right: 0;
+                            margin-bottom: 5px;
+                            padding:10px 12px;
+                            display: inline-block;
+                            color:black;
+                            border:1px solid #e5e5e5;
+                            border-radius: 30px;
+                        }
+                    }
                 }
             }
         }
