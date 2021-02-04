@@ -1,0 +1,92 @@
+#about-registration {
+    .content {
+        z-index: 1;
+        padding: 32px;
+        background-color: #fff;
+        box-shadow: -3.285px 20.741px 51px 0px rgba(0, 0, 47, 0.05);
+        position: relative;
+
+        &::after {
+            content: "";
+            top: 0;
+            left: 0;
+            width: 70%;
+            z-index: -1;
+            height: 100%;
+            position: absolute;
+            background-repeat: no-repeat;
+            background-image: url(../image/about-us/bg.png);
+        }
+
+        .img {
+            position: absolute;
+            right: 0;
+            bottom:0;
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+
+        .text {
+            max-width: 450px;
+
+            h3 {
+                color: #fff;
+                font-size: 36px;
+                font-family: $secondary-font;
+                font-weight: 700;
+                line-height: 1.167;
+                padding-bottom: 20px;
+
+                span {
+                    color: #ff5520;
+                    font-size: 36px;
+                    font-weight: 700;
+                    line-height: 1.167;
+                    padding-bottom: 20px;
+
+                }
+            }
+
+            p {
+                color: #c6c6c6;
+                padding-bottom: 25px;
+            }
+
+            a {
+                height: 45px;
+                width: 140px;
+                color: #fff;
+                display: block;
+                font-size: 15px;
+                line-height: 45px;
+                overflow: hidden;
+                font-weight: 700;
+                text-align: center;
+                border-radius: 40px;
+                background-color: #00a4ff;
+                text-decoration: none;
+                position: relative;
+                z-index: 1;
+                transition: all 2s ease;
+
+                &::after {
+                    top: 0;
+                    width: 0;
+                    left: -40%;
+                    content: "";
+                    z-index: -1;
+                    height: 100%;
+                    position: absolute;
+                    transform: skew(50deg);
+                    transition-duration: 0.6s;
+                    transform-origin: top left;
+                    background-color: #ff5520;
+                }
+            }
+
+        }
+    }
+}

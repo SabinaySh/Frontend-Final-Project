@@ -1,0 +1,90 @@
+#about-course{
+    background-image: url("../image/about-us/bg-course.jpg") ;
+    // background-color: #e7e8e9;
+    padding: 100px 0px;
+    // padding-right:100px ;
+    // margin-right: 1000px ;
+    // overflow: hidden;
+    // margin: 0;
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    background-position: center;
+    .title{
+        position: relative;
+        .watermark{
+            position: absolute;
+            color: #fff;
+            opacity: 1;
+            left: 0;
+            right: 0;
+            top: -60px;
+            // opacity: 0.04;
+            // color: #53536c;
+            line-height: 1;
+            font-size: 100px;
+            font-weight: 900;
+            margin-bottom: 0;
+            text-align: center;
+        }
+        span{
+            font-size: 18px;
+            font-family: $primary-font;
+            font-weight: 700;
+            color: #0000fe;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            opacity: 0.8;
+        }
+        h2{
+            color:black;
+            font-size: 40px;
+            font-family: $secondary-font;
+            font-weight: 700;
+            // line-height: 1.125;
+            padding: 15px 250px 20px;
+            text-align: center;
+        }
+    }
+    .content{
+        padding-top:35px;
+    }
+    .list{
+        background-color: white;
+        z-index: 1;
+        padding: 35px 25px;
+        transition: 0.3s all ease-in-out;
+        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.06);
+        .icon{
+            line-height: 1;
+            margin-right: 15px;
+            i{
+                color:#0000fe;
+                font-size: 45px;
+                transition: 0.3s all ease-in-out;
+            }
+        }
+        .text{
+            h3{
+                color: #000;
+                font-size: 22px;
+                font-weight: 700;
+                padding-bottom: 10px;
+                transition: 0.3s all ease-in-out;
+                a{
+                    outline: none;
+                    box-shadow: none;
+                    text-decoration: none;
+                }
+            }
+            p{
+                font-size: 15px;
+    color: #555555;
+    transition: 0.3s all ease-in-out;
+            }
+
+        }
+
+    }
+ 
+}

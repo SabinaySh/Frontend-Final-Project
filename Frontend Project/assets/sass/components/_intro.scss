@@ -118,7 +118,7 @@
             left: 25%;
             width: 10px;
             height: 10px;
-            background-color: #000;
+            background-color:  #0000fe;
             box-shadow: 0px 6px 13px 0px rgba(0, 0, 0, .2);
             animation: animationFramesTwo 18s infinite alternate;
         }
@@ -182,12 +182,13 @@
                     margin-right: 10px;
                     border-radius: 40px;
                     display: inline-block;
-                    background-color: #00003d;
+                    background-color: #0000fe;
                 }
 
                 p {
                     color: #000;
                     font-size: 16px;
+                    font-family: $primary-font;
                     font-weight: 600;
                     padding-bottom: 0;
                     display: inline-block;
@@ -202,7 +203,7 @@
                 padding-bottom: 35px;
 
                 .cd-words-wrapper {
-                    color: #00003d;
+                    color: #0000fe;
                     position: relative;
                     left: 15px;
 
@@ -260,7 +261,7 @@
                     line-height: 50px;
                     border-radius: 100%;
                     transition: 0.3s all ease-in-out;
-                    background-color: #00003d;
+                    background-color: #0000fe;
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -275,7 +276,7 @@
                             font-size: 20px;
                         }
 
-                        .border-btn {
+                        .course-btn {
                             border: 2px solid rgba(0, 0, 0, 0.15);
                             top: 0;
                             left: -15px;
