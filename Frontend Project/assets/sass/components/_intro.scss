@@ -150,7 +150,7 @@
 
         .intro-img {
             position: absolute;
-            top: 77px;
+            top: 0;
             right: -140px;
             overflow: hidden;
 
@@ -197,7 +197,7 @@
 
             .cd-headline {
                 color: #000;
-                font-size: 58px;
+                font-size: 49px;
                 font-weight: 700;
                 line-height: 1.2;
                 padding-bottom: 35px;
@@ -251,8 +251,43 @@
                 display: flex;
 
                 .course-btn {
+                    transition: all .1s linear;
                     z-index: 2;
-                    margin-right: 35px;
+                
+                    a {
+                        position: relative;
+                        color: #fff;
+                        width: 160px;
+                        height: 55px;
+                        display: block;
+                        overflow: hidden;
+                        font-weight: 700;
+                        line-height: 55px;
+                        border-radius: 40px;
+                        background-color: #0000fe;
+                        text-align: center;
+                        z-index: 1;
+                        transition: all .4s linear;
+                
+                        &::after {
+                            top: 0;
+                            width: 0;
+                            left: -40%;
+                            content: "";
+                            z-index: -1;
+                            height: 100%;
+                            position: absolute;
+                            transform: skew(50deg);
+                            transition-duration: 0.6s;
+                            transform-origin: top left;
+                            background-color: #e3002a;
+                        }
+                
+                        &:hover::after {
+                            height: 100%;
+                            width: 150%;
+                        }
+                    }
                 }
 
                 .play-btn {
@@ -267,6 +302,7 @@
                     align-items: center;
                     cursor: pointer;
                     z-index: 2;
+                    margin-left:35px;
 
                     a {
                         position: relative;
@@ -276,7 +312,7 @@
                             font-size: 20px;
                         }
 
-                        .course-btn {
+                        .border-btn {
                             border: 2px solid rgba(0, 0, 0, 0.15);
                             top: 0;
                             left: -15px;

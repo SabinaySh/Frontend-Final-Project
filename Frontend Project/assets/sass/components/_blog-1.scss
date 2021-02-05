@@ -11,6 +11,7 @@
             position: relative!important;
             .image{
                 position: relative!important;
+                overflow: hidden;
                 &::after{
                     top: 0;
                     left: 0;
@@ -19,11 +20,13 @@
                     height: 100%;
                     position: absolute;
                     background-color: rgba(0, 0, 0, 0.25);
+                    
                 }
                 img{
                     max-width: 100%;
                     height: auto;
-
+                    transition: 0.4s all ease-in-out;
+                    
                 }
             }
             .blog-date{
@@ -133,40 +136,32 @@
                     display: inline-block;
                     font-size: 14px;
                     font-weight: 700;
-                    transition: 0.3s all ease-in-out;
+                    transition: all 0.3s ease-in-out;
                     position: relative;
-                    // &::after{
-                    //     content: '';
-                    //     left: 0;
-                    //     bottom: 0;
-                    //     width: 60px;
-                    //     height: 1px;
-                    //     position: absolute;
-                    //     
-                    //     background-color: #0000fe;
-                    // }
-                    // &:hover{
-                    //   color:#0000fe;
-                    // //   width:50px;
-                    // }
-                    span{
+                    &::after{
+                        content: '';
+                        left: 0;
+                        bottom: 0;
+                        width: 0;
+                        height: 1px;
                         position: absolute;
-                        background-color:#0000fe;
-                        height:1px;
-                        width:78px;
-                        left:0;
-                        bottom:0;
-                        display: none;
-                        transition: 0.3s all ease-in-out;
-                     
-
+                        background-color: #0000fe;
+                        transition: all .4s linear;
                     }
                     &:hover{
-                        span{
-                            display:block;
-
+                        &::after{
+                            width:100%;
                         }
+                        color: #0000fe;
                     }
+                }
+            }
+        }
+        &:hover{
+            box-shadow: 0px 43px 35px 0px rgba(12,12,12,0.1);
+            .image{
+                img{
+                    transform:scale(1.2) rotate(5deg);
                 }
             }
         }

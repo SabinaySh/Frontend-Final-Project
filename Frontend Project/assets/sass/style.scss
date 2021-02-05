@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap');
 @import 'variables';
 @import 'websites';
+@import 'flaticon';
 @import 'components/navbar';
+@import 'components/navbar-modal';
 @import 'components/banner';
 @import 'components/course';
 @import 'components/footer-menu';
@@ -17,3 +19,4 @@
 @import 'components/about-course';
 @import 'components/about-registration';
 @import 'components/about-testimonial';
+@import 'components/google-map';

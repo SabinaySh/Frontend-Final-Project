@@ -1,5 +1,5 @@
-body{
- 
+body {
+
     margin: 0;
     padding: 0;
     color: #f2f2f4;
@@ -9,10 +9,10 @@ body{
     font-family: $primary-font;
     -moz-osx-font-smoothing: antialiased;
     -webkit-font-smoothing: antialiased;
-    
+
 }
 
-#backToTop{
+#backToTop {
     width: 45px;
     right: 15px;
     z-index: 5;
@@ -22,6 +22,14 @@ body{
     position: fixed;
     line-height: 45px;
     background-color: #e3002a;
-    color:white;
+    color: white;
 
+}
+
+.container {
+    max-width: 1200px;
+}
+
+a{
+    text-decoration: none;
 }

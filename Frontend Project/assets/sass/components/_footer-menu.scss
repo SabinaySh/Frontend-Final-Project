@@ -19,13 +19,10 @@
             .text {
                 p {
                     color: #9d9d9d;
-                    // padding-bottom: 35px;
+
                 }
 
-                a {
-                    text-decoration: none;
-                    border-radius: 30px;
-                    background-color: #ff5520;
+                .footer-btn {
                     color: #fff;
                     height: 35px;
                     width: 100px;
@@ -34,8 +31,35 @@
                     line-height: 35px;
                     overflow: hidden;
                     display: inline-block;
-                    text-align: center;
+                    border-radius: 30px;
+                    background-color: #ff5520;
                     transition: 0.3s all ease-in-out;
+                    position: relative;
+                    text-align: center;
+                    z-index: 1;
+
+                    &::after {
+                        top: 0;
+                        width: 0;
+                        left: -40%;
+                        content: "";
+                        z-index: -1;
+                        height: 100%;
+                        position: absolute;
+                        transform: skew(50deg);
+                        transition-duration: 0.6s;
+                        transform-origin: top left;
+                        background-color: white;
+                    }
+
+                    &:hover::after {
+                        height: 100%;
+                        width: 150%;
+                    }
+
+                    &:hover {
+                        color: #000;
+                    }
                 }
             }
         }
@@ -253,12 +277,15 @@
                             transition: 0.3s all ease-in-out;
                             z-index: 1;
                         }
-                        a{
+
+                        a {
                             position: relative;
-                            img{
+
+                            img {
                                 max-width: 100%;
                             }
-                            i{
+
+                            i {
                                 z-index: 2;
                                 left: 0;
                                 top: 50%;
@@ -271,10 +298,12 @@
                                 transition: 0.3s all ease-in-out;
                             }
                         }
-                        &:hover a i{
+
+                        &:hover a i {
                             opacity: 1;
                         }
-                        &:hover::before{
+
+                        &:hover::before {
                             opacity: 0.7;
                         }
                     }

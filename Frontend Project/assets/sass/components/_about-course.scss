@@ -1,17 +1,13 @@
-#about-course{
-    background-image: url("../image/about-us/bg-course.jpg") ;
-    // background-color: #e7e8e9;
+#about-course {
+    background-image: url("../image/about-us/bg-course.jpg");
     padding: 100px 0px;
-    // padding-right:100px ;
-    // margin-right: 1000px ;
-    // overflow: hidden;
-    // margin: 0;
-    // background-size: cover;
-    // background-repeat: no-repeat;
+
     background-position: center;
-    .title{
+
+    .title {
         position: relative;
-        .watermark{
+
+        .watermark {
             position: absolute;
             color: #fff;
             opacity: 1;
@@ -26,7 +22,8 @@
             margin-bottom: 0;
             text-align: center;
         }
-        span{
+
+        span {
             font-size: 18px;
             font-family: $primary-font;
             font-weight: 700;
@@ -36,8 +33,9 @@
             justify-content: center;
             opacity: 0.8;
         }
-        h2{
-            color:black;
+
+        h2 {
+            color: black;
             font-size: 40px;
             font-family: $secondary-font;
             font-weight: 700;
@@ -46,45 +44,85 @@
             text-align: center;
         }
     }
-    .content{
-        padding-top:35px;
+
+    .content {
+        padding-top: 35px;
     }
-    .list{
+
+    .list {
         background-color: white;
-        z-index: 1;
         padding: 35px 25px;
         transition: 0.3s all ease-in-out;
         box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.06);
-        .icon{
+        position: relative;
+        z-index: 2;
+
+        .icon {
             line-height: 1;
             margin-right: 15px;
-            i{
-                color:#0000fe;
+            display: flex;
+
+            .text {
+                margin-left: 20px;
+
+                h3 {
+
+                    font-size: 22px;
+                    font-weight: 700;
+                    padding-bottom: 10px;
+                    transition: 0.3s all ease-in-out;
+
+                    a {
+                        color: #000;
+                        outline: none;
+                        box-shadow: none;
+                        text-decoration: none;
+                    }
+                }
+
+                p {
+                    font-size: 15px;
+                    color: #555555;
+                    transition: 0.3s all ease-in-out;
+                }
+
+            }
+
+            i {
+                color: #0000fe;
                 font-size: 45px;
                 transition: 0.3s all ease-in-out;
             }
         }
-        .text{
-            h3{
-                color: #000;
-                font-size: 22px;
-                font-weight: 700;
-                padding-bottom: 10px;
-                transition: 0.3s all ease-in-out;
-                a{
-                    outline: none;
-                    box-shadow: none;
-                    text-decoration: none;
+
+        &::after {
+            top: 0;
+            left: 0;
+            width: 0;
+            z-index: -1;
+            content: "";
+            height: 100%;
+            position: absolute;
+            background-color: #000;
+            transition: all 500ms ease-in-out;
+        }
+        &:hover::after{
+            width: 100%;
+        }
+        &:hover{
+            transform: translateY(-15px);
+            i{
+                color: rgb(221, 50, 50);
+            }
+            .text{
+                h3{
+                    a{
+                        color:white;
+                    }
                 }
             }
-            p{
-                font-size: 15px;
-    color: #555555;
-    transition: 0.3s all ease-in-out;
-            }
-
         }
 
     }
- 
+
 }

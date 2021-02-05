@@ -5,6 +5,7 @@
         text-align: center;
         position: relative;
         margin-bottom:150px;
+        transition: 0.4s all ease-in-out;
 
         .image{
             position: absolute;
@@ -56,6 +57,7 @@
                     font-size: 20px;
                     font-weight: 700;
                     font-family: $secondary-font;
+                    transition: all .4s linear;
                 }
             }
             span{
@@ -71,6 +73,18 @@
                 color:#888888;
             }
         }
+        &:hover {
+            .text{
+                background-color: #ff5520;
+               span,h3 a{
+                   color:white;
+               }
+            }
+        }
+        &:hover .text::after{
+            background-color: #f7815d;
+        }
+ 
     }
 
 }
