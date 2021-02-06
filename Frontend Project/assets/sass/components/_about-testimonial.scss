@@ -30,7 +30,8 @@
             display: flex;
             justify-content: center;
         }
-        h2{
+
+        h2 {
             color: #000;
             font-size: 40px;
             font-family: $secondary-font;
@@ -38,7 +39,123 @@
             line-height: 1.125;
             padding: 15px 0px 20px;
             text-align: center;
-           
+
+        }
+    }
+
+    .testimonials {
+        background-color: #fff;
+
+        .item {
+            width: 270px;
+
+            .icon-text-img {
+                overflow: hidden;
+                border-radius: 10px;
+                padding: 40px 30px 25px;
+                transition: 0.3s all ease-in-out;
+                box-shadow: 0px 12px 35px 0px rgba(12, 12, 12, 0.06);
+                position: relative;
+
+                .icon {
+                    position: absolute;
+                    top: 15px;
+                    right: 15px;
+
+                    i {
+                        color: #efefef;
+                        line-height: 1;
+                        font-size: 30px;
+                        transition: 0.3s all ease-in-out;
+                    }
+                }
+
+                .text {
+                    h3 {
+                        font-size: 18px;
+                        font-family: $secondary-font;
+                        font-weight: 700;
+                        color: #0000fe;
+                        padding-bottom: 15px;
+
+                    }
+
+                    p {
+                        color: #666666;
+                    }
+                }
+
+                .img-name {
+                    display: flex;
+
+                    .img {
+                        width: 65px;
+                        height: 65px;
+                        overflow: hidden;
+                        margin-right: 12px;
+                        border-radius: 100%;
+                        position: relative;
+
+                        &::after {
+                            content: "";
+                            top: 0;
+                            left: 0;
+                            width: 65px;
+                            z-index: 1;
+                            height: 65px;
+                            border-radius: 50%;
+                            position: absolute;
+                            border: 3px solid #0000fe;
+                        }
+
+                        &::before {
+                            content: "";
+                            top: 3px;
+                            left: 4px;
+                            width: 59px;
+                            z-index: 1;
+                            height: 59px;
+                            position: absolute;
+                            border-radius: 50%;
+                            border: 5px solid #fff;
+                        }
+
+                    }
+
+                    .name {
+                        h4 {
+                            margin: 0;
+
+                            a {
+                                color: #000;
+                                font-size: 14px;
+                                font-family: $secondary-font;
+                                font-weight: 700;
+
+                            }
+                        }
+
+                        span {
+                            color: #888888;
+                            font-size: 14px;
+                            font-family: $primary-font;
+                            margin-top: -10px;
+                        }
+                    }
+
+                }
+
+                &:hover {
+                    transform: translateY(-25px);
+                    box-shadow: 0px 36px 35px 0px rgba(12, 12, 12, 0.1);
+
+                    .icon {
+                        i {
+                            color: #ff5520;
+                        }
+                    }
+                }
+            }
         }
     }
 }

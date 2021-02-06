@@ -55,7 +55,7 @@
                 padding-bottom: 25px;
             }
 
-            a {
+            .register-btn {
                 height: 45px;
                 width: 140px;
                 color: #fff;
@@ -70,7 +70,7 @@
                 text-decoration: none;
                 position: relative;
                 z-index: 1;
-                transition: all 2s ease;
+                transition: 0.3s all ease-in-out;
 
                 &::after {
                     top: 0;
@@ -85,6 +85,11 @@
                     transform-origin: top left;
                     background-color: #ff5520;
                 }
+                &:hover::after {
+                    height: 100%;
+                    width: 150%;
+                }
+
             }
 
         }

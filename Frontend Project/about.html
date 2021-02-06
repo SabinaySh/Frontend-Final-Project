@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,90 +9,96 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <script src="https://kit.fontawesome.com/ed033e23b7.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
     <link rel="stylesheet" href="assets/css/style.min.css">
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
-              <a class="navbar-brand" href="#"><img src="assets/image/logo3.png" alt=""></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="navbar-menus">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item has-children">
-                        <a class="nav-link" href="#">
-                          Home <i class="fas fa-plus"></i>
-                        </a>
-                        
-                        <ul class="nav-submenu">
-                          <li><a href="#">Home Page 1</a></li>
-                         
-                          <li><a href="#">Home Page 2</a></li>
-                        
-                          <li><a href="#">Home Page 3</a></li>
-                        
-                          <li><a href="#">Home Page 4</a></li>
-                        </ul>
-                      </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                  </li>
-                  <li class="nav-item has-children">
-                    <a class="nav-link" href="#">
-                      Course <i class="fas fa-plus"></i>
-                    </a>
-                    <ul class="nav-submenu">
-                      <li><a href="#">Course</a></li>
-                      <li><a href="#">Course Details</a></li>
+                <a class="navbar-brand" href="#"><img src="assets/image/logo3.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-menus">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item has-children">
+                            <a class="nav-link" href="#">
+                                Home <i class="fas fa-plus"></i>
+                            </a>
+
+                            <ul class="nav-submenu">
+                                <li><a href="#">Home Page 1</a></li>
+
+                                <li><a href="#">Home Page 2</a></li>
+
+                                <li><a href="#">Home Page 3</a></li>
+
+                                <li><a href="#">Home Page 4</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item has-children">
+                            <a class="nav-link" href="#">
+                                Course <i class="fas fa-plus"></i>
+                            </a>
+                            <ul class="nav-submenu">
+                                <li><a href="#">Course</a></li>
+                                <li><a href="#">Course Details</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item has-children">
+                            <a class="nav-link" href="#">
+                                Pages <i class="fas fa-plus"></i>
+                            </a>
+                            <ul class="nav-submenu">
+                                <li><a href="#">Gallery</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Event</a></li>
+                                <li><a href="#">Event Details</a></li>
+                                <li><a href="#">Faq</a></li>
+                                <li><a href="#">404</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item has-children">
+                            <a class=" nav-link" href="#">
+                                Blog <i class="fas fa-plus"></i>
+                            </a>
+                            <ul class="nav-submenu">
+                                <li><a href="#">Blog 1</a></li>
+                                <li><a href="#">Blog 2</a></li>
+                                <li><a href="#">Blog Details 1</a></li>
+                                <li><a href="#">Blog Details 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item has-children">
+                            <a class="nav-link" href="#">
+                                Instructor <i class="fas fa-plus"></i>
+                            </a>
+                            <ul class="nav-submenu">
+                                <li><a href="#">Instructor</a></li>
+                                <li><a href="#">Instructor Details</a></li>
+                            </ul>
+                        </li>
                     </ul>
-                  </li>
-                  <li class="nav-item has-children">
-                    <a class="nav-link" href="#">
-                      Pages <i class="fas fa-plus"></i>
-                    </a>
-                    <ul class="nav-submenu">
-                      <li><a href="#">Gallery</a></li>
-                      <li><a href="#">Contact</a></li>
-                      <li><a href="#">Event</a></li>
-                      <li><a href="#">Event Details</a></li>
-                      <li><a href="#">Faq</a></li>
-                      <li><a href="#">404</a></li>
+                </div>
+                <div class="nav-action">
+                    <ul class="nav-icons d-flex ">
+                        <li class="shopping">
+                            <a href=""> <i class="fas fa-shopping-cart"></i></a>
+                        </li class="user">
+                        <li><a href="" data-bs-toggle="modal" data-bs-target="#loginModal"><i
+                                    class="fas fa-user"></i></a></li>
                     </ul>
-                  </li>
-                  <li class="nav-item has-children">
-                    <a class=" nav-link" href="#">
-                      Blog <i class="fas fa-plus"></i>
-                    </a>
-                    <ul class="nav-submenu">
-                      <li><a href="#">Blog 1</a></li>
-                      <li><a href="#">Blog 2</a></li>
-                      <li><a href="#">Blog Details 1</a></li>
-                      <li><a href="#">Blog Details 2</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item has-children">
-                    <a class="nav-link" href="#">
-                      Instructor <i class="fas fa-plus"></i>
-                    </a>
-                    <ul class="nav-submenu">
-                      <li><a href="#">Instructor</a></li>
-                      <li><a href="#">Instructor Details</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-              <div class="nav-action">
-                  <ul class="nav-icons d-flex ">
-                     <li class="shopping">
-                         <a href=""> <i class="fas fa-shopping-cart"></i></a>
-                    </li class="user">
-                    <li><a href="" data-bs-toggle="modal" data-bs-target="#loginModal"><i class="fas fa-user"></i></a></li>
-                 </ul>
-             </div>
+                </div>
             </div>
-          </nav>
+        </nav>
     </header>
     <main>
         <section data-background="assets/image/bn-bg1.jpg" id="banner">
@@ -120,13 +127,16 @@
                                     <div class="watermark">
                                         <p>About us</p>
                                     </div>
-                                    <span>_  About our University  _</span>
+                                    <span>_ About our University _</span>
                                     <h2>We are innovative educational institution for students.</h2>
-                                    <p class="expanding">Expanding significance of internet promoting. or lipsum as it is some times known, is dummy text used in laying out print, grap to an corpt or web designs.</p>
+                                    <p class="expanding">Expanding significance of internet promoting. or lipsum as it
+                                        is some times known, is dummy text used in laying out print, grap to an corpt or
+                                        web designs.</p>
                                     <div class="video-content">
                                         <div class="video">
                                             <img src="assets/image/about-us/university2.jpg" alt="">
-                                            <a href="https://www.youtube.com/watch?v=HndV87XpkWg"> <i class="fas fa-play"></i></a>
+                                            <a href="https://www.youtube.com/watch?v=HndV87XpkWg"> <i
+                                                    class="fas fa-play"></i></a>
                                         </div>
                                         <div class="content">
                                             <h3>Check how we clean!</h3>
@@ -158,7 +168,7 @@
                                         <p>Highly competitive rates yet, located in heart of the Nation's Capital.</p>
                                     </div>
                                 </div>
-                             </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-4">
@@ -197,12 +207,13 @@
                         <img src="assets/image/about-us/registration.png" alt="">
                     </span>
                     <div class="text">
-                      
-                      <h3>Get 10% Off on registration fee for
-                           <span>COVID-19</span>
+
+                        <h3>Get 10% Off on registration fee for
+                            <span>COVID-19</span>
                         </h3>
-                        <P>The last step you need to take to be allowed to follow a course is to be registered on it.</P>
-                        <a href="#">Register now</a>
+                        <P>The last step you need to take to be allowed to follow a course is to be registered on it.
+                        </P>
+                        <a href="#" class="register-btn">Register now</a>
                     </div>
                 </div>
             </div>
@@ -214,6 +225,172 @@
                     <span>_ Testimonials _</span>
                     <h2>We have many courses in our top Categories</h2>
                 </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="owl-carousel testimonials owl-theme">
+                            <div class="item">
+                                <div class="icon-text-img">
+                                    <div class="icon">
+                                        <i class="fas fa-quote-right"></i>
+                                    </div>
+                                    <div class="text">
+                                        <h3>Best Support ever!</h3>
+                                        <p>5 stars for design quality, but also for prompt new customer service and great attention to details work.</p>
+                                    </div>
+                                    <div class="img-name">
+                                        <div class="img">
+                                            <img src="assets/image/about-us/testi-a1.jpg" alt="">
+                                        </div>
+                                        <div class="name">
+                                            <h4><a href="#">Alina Lora</a></h4>
+                                            <span>Formar Manager.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="icon-text-img">
+                                    <div class="icon">
+                                        <i class="fas fa-quote-right"></i>
+                                    </div>
+                                    <div class="text">
+                                        <h3>Good cleaning service</h3>
+                                        <p>5 stars for design quality, but also for prompt new customer service and great attention to details work.</p>
+                                    </div>
+                                    <div class="img-name">
+                                        <div class="img">
+                                            <img src="assets/image/about-us/testi-a2.jpg" alt="">
+                                        </div>
+                                        <div class="name">
+                                            <h4><a href="#">Tanir Fro</a></h4>
+                                            <span>Formar Manager.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="icon-text-img">
+                                    <div class="icon">
+                                        <i class="fas fa-quote-right"></i>
+                                    </div>
+                                    <div class="text">
+                                        <h3>Service satisfaction!</h3>
+                                        <p>5 stars for design quality, but also for prompt new customer service and great attention to details work.</p>
+                                    </div>
+                                    <div class="img-name">
+                                        <div class="img">
+                                            <img src="assets/image/about-us/testi-a3.jpg" alt="">
+                                        </div>
+                                        <div class="name">
+                                            <h4><a href="#">Leofar Lord</a></h4>
+                                            <span>Formar Manager.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="icon-text-img">
+                                    <div class="icon">
+                                        <i class="fas fa-quote-right"></i>
+                                    </div>
+                                    <div class="text">
+                                        <h3>Best teaching tips!</h3>
+                                        <p>5 stars for design quality, but also for prompt new customer service and great attention to details work.</p>
+                                    </div>
+                                    <div class="img-name">
+                                        <div class="img">
+                                            <img src="assets/image/about-us/testi-a4.jpg" alt="">
+                                        </div>
+                                        <div class="name">
+                                            <h4><a href="#">Rohit Grow</a></h4>
+                                            <span>Formar Manager.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="icon-text-img">
+                                    <div class="icon">
+                                        <i class="fas fa-quote-right"></i>
+                                    </div>
+                                    <div class="text">
+                                        <h3>Best Support ever!</h3>
+                                        <p>5 stars for design quality, but also for prompt new customer service and great attention to details work.</p>
+                                    </div>
+                                    <div class="img-name">
+                                        <div class="img">
+                                            <img src="assets/image/about-us/testi-a1.jpg" alt="">
+                                        </div>
+                                        <div class="name">
+                                            <h4><a href="#">Alina Lora</a></h4>
+                                            <span>Formar Manager.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="icon-text-img">
+                                    <div class="icon">
+                                        <i class="fas fa-quote-right"></i>
+                                    </div>
+                                    <div class="text">
+                                        <h3>Good cleaning service</h3>
+                                        <p>5 stars for design quality, but also for prompt new customer service and great attention to details work.</p>
+                                    </div>
+                                    <div class="img-name">
+                                        <div class="img">
+                                            <img src="assets/image/about-us/testi-a2.jpg" alt="">
+                                        </div>
+                                        <div class="name">
+                                            <h4><a href="#">Tanir Fro</a></h4>
+                                            <span>Formar Manager.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="icon-text-img">
+                                    <div class="icon">
+                                        <i class="fas fa-quote-right"></i>
+                                    </div>
+                                    <div class="text">
+                                        <h3>Service satisfaction!</h3>
+                                        <p>5 stars for design quality, but also for prompt new customer service and great attention to details work.</p>
+                                    </div>
+                                    <div class="img-name">
+                                        <div class="img">
+                                            <img src="assets/image/about-us/testi-a3.jpg" alt="">
+                                        </div>
+                                        <div class="name">
+                                            <h4><a href="#">Leofar Lord</a></h4>
+                                            <span>Formar Manager</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="icon-text-img">
+                                    <div class="icon">
+                                        <i class="fas fa-quote-right"></i>
+                                    </div>
+                                    <div class="text">
+                                        <h3>Best teaching tips!</h3>
+                                        <p>5 stars for design quality, but also for prompt new customer service and great attention to details work.</p>
+                                    </div>
+                                    <div class="img-name">
+                                        <div class="img">
+                                            <img src="assets/image/about-us/testi-a4.jpg" alt="">
+                                        </div>
+                                        <div class="name">
+                                            <h4><a href="#">Rohit Grow</a></h4>
+                                            <span class="manager">Formar Manager.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -222,14 +399,15 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3">
-                       <div class="footer-about-us">
+                        <div class="footer-about-us">
                             <div class="footer-logo">
                                 <a href="#"> <img src="assets/image/footer-logo.png" alt=""></a>
                             </div>
-                             <div class="text"> 
-                                <p>We work with a passion of taking challenges and creating new ones in adverstising sector</p>
-                                 <a href="#" class="footer-btn">About Us</a>
-                             </div>
+                            <div class="text">
+                                <p>We work with a passion of taking challenges and creating new ones in adverstising
+                                    sector</p>
+                                <a href="#" class="footer-btn">About Us</a>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-3">
@@ -259,9 +437,9 @@
                                 <li>
                                     <i class="fas fa-map-marker-alt"></i>
                                     <a href="#"><span>30 Coomercial Road</span>
-                                    <a href="#"><span class="fratton"> Fratton,Australia</span>
-                                                                                
-                                    </a>
+                                        <a href="#"><span class="fratton"> Fratton,Australia</span>
+
+                                        </a>
                                 </li>
                                 <li>
                                     <i class="fas fa-phone"></i>
@@ -278,19 +456,25 @@
                     <div class="col-lg-3">
                         <div class="footer-instagram">
                             <div class="instagram">
-                               <h3 class="title">Instagram</h3>
-                               <div class="insta-icon">
-                                  <ul>
-                                     <li><a href="!#"><img src="assets/image/footer-ins1.jpg" alt=""><i class="fab fa-instagram"></i></a></li>
-                                     <li><a href="!#"><img src="assets/image/footer-ins2.jpg" alt=""><i class="fab fa-instagram"></i></a></li>
-                                     <li><a href="!#"><img src="assets/image/footer-ins3.jpg" alt=""><i class="fab fa-instagram"></i></a></li>
-                                     <li><a href="!#"><img src="assets/image/footer-ins4.jpg" alt=""><i class="fab fa-instagram"></i></a></li>
-                                     <li><a href="!#"><img src="assets/image/footer-ins5.jpg" alt=""><i class="fab fa-instagram"></i></a></li>
-                                     <li><a href="!#"><img src="assets/image/footer-ins6.jpg" alt=""><i class="fab fa-instagram"></i></a></li>
-                                  </ul>
-                               </div>
+                                <h3 class="title">Instagram</h3>
+                                <div class="insta-icon">
+                                    <ul>
+                                        <li><a href="!#"><img src="assets/image/footer-ins1.jpg" alt=""><i
+                                                    class="fab fa-instagram"></i></a></li>
+                                        <li><a href="!#"><img src="assets/image/footer-ins2.jpg" alt=""><i
+                                                    class="fab fa-instagram"></i></a></li>
+                                        <li><a href="!#"><img src="assets/image/footer-ins3.jpg" alt=""><i
+                                                    class="fab fa-instagram"></i></a></li>
+                                        <li><a href="!#"><img src="assets/image/footer-ins4.jpg" alt=""><i
+                                                    class="fab fa-instagram"></i></a></li>
+                                        <li><a href="!#"><img src="assets/image/footer-ins5.jpg" alt=""><i
+                                                    class="fab fa-instagram"></i></a></li>
+                                        <li><a href="!#"><img src="assets/image/footer-ins6.jpg" alt=""><i
+                                                    class="fab fa-instagram"></i></a></li>
+                                    </ul>
+                                </div>
                             </div>
-                         </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -303,13 +487,15 @@
             <div class="modal-content">
                 <div class="modal-body">
                     ...
-                  </div>
+                </div>
             </div>
         </div>
     </div>
     <a href="#" class=" text-center" style="display: block;" id="backToTop"><i class="fas fa-chevron-up"></i></a>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>

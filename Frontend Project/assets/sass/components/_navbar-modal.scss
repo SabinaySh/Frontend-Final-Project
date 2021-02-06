@@ -10,22 +10,21 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
-
+        position: relative;
+        &::after {
+            top: 0;
+            z-index: -1;
+            width: 100%;
+            content: "";
+            height: 100%;
+            position: absolute;
+            background-color: rgba(0, 0, 255, 0.7);
+        }
         .text {
             margin: 0 auto;
             max-width: 310px;
             text-align: center;
             position: relative;
-
-            &::after {
-                top: 0;
-                z-index: -1;
-                width: 100%;
-                content: "";
-                height: 100%;
-                position: absolute;
-                background-color: rgba(0, 0, 255, 0.7);
-            }
 
             a {
                 text-decoration: none;
