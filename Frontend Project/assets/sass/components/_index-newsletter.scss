@@ -1,0 +1,61 @@
+#index-newsletter {
+    background-color: #f7f7f7;
+    .newsletter {
+        border-radius: 5px;
+        padding: 35px 20px;
+        background-color: #000;
+        position: relative;
+        margin-bottom: -63px;
+
+        .text-submit {
+            display: flex;
+            justify-content: space-between;
+            .text{
+                span{
+                    color:white;
+                }
+            }
+
+            .submit {
+                display: flex;
+                justify-content: end;
+
+                form {
+                    width:330px;
+                    display: flex;
+                    align-items: space-between;
+                    // justify-content: space-between;
+                    position: relative;
+                    
+                    input {
+                        height: 48px;
+                        width: 100%;
+                        border: none;
+                        max-width: 320px;
+                        padding-left: 20px;
+                        background-color: #292929;
+                        outline: none;
+                        position: absolute;
+                        top: 13px;
+                        right: -90px;
+                    }
+                    button{
+                        top: 15px;
+                        right: -75%;
+                        padding: 0;
+                        color: #fff;
+                        outline: none;
+                        border: none;
+                        width: 145px;
+                        height: 45px;
+                        font-size: 14px;
+                        font-weight: 700;
+                        position: absolute;
+                        background-color: #ff5520;
+                        transition: 0.3s all ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+}
