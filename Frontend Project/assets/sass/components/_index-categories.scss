@@ -17,69 +17,117 @@
             font-weight: 900;
             margin-bottom: 0;
         }
-        span{
-            color:#0000fe;
+
+        span {
+            color: #0000fe;
             font-size: 18px;
             font-family: $primary-font;
             font-weight: 700;
-            padding:0 15px;
+            padding: 0 15px;
         }
-        h2{
-            color:black;
-            font-size:40px ;
+
+        h2 {
+            color: black;
+            font-size: 40px;
             font-family: $secondary-font;
             font-weight: 700;
-            padding:15px 240px 45px;
+            padding: 15px 240px 45px;
 
         }
     }
 
     .top-owl {
         .item {
-            border-radius: 10px;
-            background-color: #000;
-            padding: 25px 40px 0px;
-            margin-right: 30px;
 
-            .icon-text {
-                display: flex;
+            .icon-text-img {
+                border-radius: 10px;
+                background-color: #000;
+                padding: 25px 40px 0px;
+                margin-right: 30px;
+                position: relative;
 
-                align-items: center;
-                padding-bottom: 12px;
+                .icon-text {
+                    display: flex;
 
-                .icon {
-                    margin-right: 15px;
-                    transition: 0.6s cubic-bezier(0.24, 0.74, 0.58, 1);
+                    align-items: center;
+                    padding-bottom: 12px;
 
-                    i {
-                        font-size: 45px;
-                        color: #ff5520;
-                    }
-                }
+                    .icon {
+                        margin-right: 15px;
+                        transition: 0.6s cubic-bezier(0.24, 0.74, 0.58, 1);
 
-                .text {
-                    h3 {
-                        a {
-                            font-weight: 700;
-                            font-family: $secondary-font;
-                            font-size: 24px;
-                            text-decoration: none;
-                            color: white;
+                        i {
+                            font-size: 45px;
+                            color: #ff5520;
                         }
                     }
 
-                    span {
-                        color: #ababab;
+                    .text {
+                        h3 {
+                            a {
+                                font-weight: 700;
+                                font-family: $secondary-font;
+                                font-size: 24px;
+                                text-decoration: none;
+                                color: white;
+                            }
+                        }
+
+                        span {
+                            color: #ababab;
+                        }
+                    }
+                }
+
+                .hover-icon {
+                    // display: inline-block;
+                    opacity: 1;
+                    bottom: -30px;
+                    // visibility: visible;
+                    width: 60px;
+                    left: 0;
+                    right: 0;
+                    height: 60px;
+                    // bottom: 0px;
+                    margin: 0 auto;
+                    // opacity: 0;
+                    // visibility: hidden;
+                    line-height: 60px;
+                    position: absolute;
+                    border-radius: 100%;
+                    background-color: #0000fe;
+                    text-align: center;
+                    transition: 0.3s all ease-in-out;
+
+                    a {
+                        i {
+
+                            color: #fff;
+                            transition: 0.3s all ease-in-out;
+                        }
+                    }
+                }
+
+                .img {
+                    img {
+                        transition: 0.3s all ease-in-out;
+                    }
+                }
+                &:hover{
+                    .icon-text{
+                        .icon{
+                            transform: rotateY(360deg);
+                        }
+                    }
+                    .img{
+                        background-color: #555;;
                     }
                 }
             }
+
         }
 
-        .img {
-            img {
-                transition: 0.3s all ease-in-out;
-            }
-        }
+
 
     }
 }

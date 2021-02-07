@@ -17,7 +17,7 @@ $(document).ready(function(){
     $('.top-owl').owlCarousel({
         loop:true,
         margin:10,
-        nav:true,
+        nav:false,
         dots:false,
         responsive:{
             0:{
@@ -35,7 +35,7 @@ $(document).ready(function(){
     $('.testimonials').owlCarousel({
         loop:true,
         margin:10,
-        nav:true,
+        nav:false,
         dots:false,
         responsive:{
             0:{
@@ -53,7 +53,7 @@ $(document).ready(function(){
     $('.owl-testimonial').owlCarousel({
         loop:true,
         margin:10,
-        nav:true,
+        nav:false,
         dots:false,
         responsive:{
             0:{
@@ -71,7 +71,7 @@ $(document).ready(function(){
     $('.owl-latest').owlCarousel({
         loop:true,
         margin:10,
-        nav:true,
+        nav:false,
         dots:false,
         responsive:{
             0:{

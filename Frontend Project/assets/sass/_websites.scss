@@ -30,6 +30,39 @@ body {
     max-width: 1200px;
 }
 
-a{
+a {
     text-decoration: none;
+}
+
+p {
+    color: #555;
+}
+
+span {
+    color: #555555;
+}
+
+
+
+.owl-carousel {
+    .owl-dots {
+        margin-top: 15px;
+        text-align: center;
+
+        .owl-dot {
+            width: 28px;
+            height: 5px;
+            margin: 0px 5px;
+            cursor: pointer;
+            border-radius: 30%;
+            display: inline-block;
+            background-color: #ececed;
+            transition: 0.3s all ease-in-out;
+
+            &.active {
+                width: 38px;
+                background-color: #0000fe;
+            }
+        }
+    }
 }
