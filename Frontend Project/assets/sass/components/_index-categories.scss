@@ -2,9 +2,7 @@
     .title {
         text-align: center;
         position: relative;
-        // padding:15px 120px;
         margin-left: 100px;
-
         .watermark {
             position: absolute;
             left: 30%;
@@ -80,18 +78,13 @@
                 }
 
                 .hover-icon {
-                    // display: inline-block;
                     opacity: 1;
                     bottom: -30px;
-                    // visibility: visible;
                     width: 60px;
                     left: 0;
                     right: 0;
                     height: 60px;
-                    // bottom: 0px;
                     margin: 0 auto;
-                    // opacity: 0;
-                    // visibility: hidden;
                     line-height: 60px;
                     position: absolute;
                     border-radius: 100%;

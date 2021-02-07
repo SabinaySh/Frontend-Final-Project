@@ -1,10 +1,10 @@
 #course-details {
     padding: 100px 0px;
-    background-color:#f2f2f4;
+    background-color: #f2f2f4;
     overflow: hidden;
 
     .course-details-content {
-        background-color:white;
+        background-color: white;
 
         .course-details-img {
             img {
@@ -18,7 +18,7 @@
 
             .course-details-btn {
                 margin-bottom: 30px;
-                background-color:#f2f2f4;
+                background-color: #f2f2f4;
 
                 .nav {
                     .nav-item {
@@ -29,7 +29,7 @@
                             font-weight: 700;
 
                             &.active {
-                                background-color:#ff5520;
+                                background-color: #ff5520;
                                 color: white;
                             }
                         }
@@ -68,7 +68,7 @@
             }
 
             .review-rate {
-                color:black;
+                color: black;
                 font-weight: 500;
                 margin-right: 10px;
             }
@@ -206,6 +206,7 @@
                     .accordion-body {
                         padding: 20px 30px;
                         border: 1px solid #f2f2f4;
+                        color:#555555;
 
                         ul {
                             padding: 0;
@@ -221,8 +222,14 @@
                                 padding-bottom: 15px;
 
                                 .left {
+                                    a{
+                                        color: #555555;
+                                    }
+
                                     i {
+                                        color: #555555;
                                         margin-right: 10px;
+                                      
                                     }
 
                                 }
@@ -230,10 +237,13 @@
                                 .right {
                                     .acc-time {
                                         margin-left: 10px;
+                                        color:#555555;
                                     }
 
                                     .acc-title {
-                                        color:#ff5520;
+                                        a{
+                                            color: #ff5520;
+                                        }
 
                                     }
                                 }
@@ -304,7 +314,8 @@
                     border-radius: 30px;
                     border: 2px solid #0000fe;
                     text-align: center;
-                   a {
+
+                    a {
                         color: black;
                         width: 100%;
                         display: block;
@@ -399,7 +410,7 @@
 
                         .reviews-text {
                             .reply-btn {
-                                color:white;
+                                color: white;
                                 height: 40px;
                                 width: 100px;
                                 font-size: 15px;
@@ -407,7 +418,7 @@
                                 border-radius: 30px;
                                 line-height: 40px;
                                 display: inline-block;
-                                background-color:#ff5520;
+                                background-color: #ff5520;
                                 text-align: center;
 
                             }
@@ -418,8 +429,61 @@
             }
 
             .contact-form {
-                input {
-                    width: 230px;
+                padding-top: 100px;
+                position: relative;
+
+                &::after {
+                    top: 0;
+                    left: -45px;
+                    height: 40px;
+                    width: 111%;
+                    content: "";
+                    position: absolute;
+                    background-color: #f2f2f4;
+                }
+
+                .c-overview-title {
+                    color: #000;
+                    font-size: 24px;
+                    font-weight: 700;
+                    padding-bottom: 10px;
+                }
+
+                .contact-form-input {
+                    padding: 0px 7px;
+
+                    input {
+                        width: 254px;
+                        height: 45px;
+                        border: none;
+                        padding-left: 15px;
+                        border-radius: 4px;
+                        margin-bottom: 20px;
+                        background-color: #efeff0;
+                        outline: none;
+                    }
+                }
+                textarea {
+                    width: 100%;
+                    border: none;
+                    height: 165px;
+                    padding: 15px;
+                    border-radius: 4px;
+                    margin-bottom: 20px;
+                    background-color: #efeff0;
+                }
+
+                button {
+                    color: #fff;
+                    width: 170px;
+                    height: 50px;
+                    border: none;
+                    font-weight: 700;
+                    border-radius: 40px;
+                    background-color: #0000fe;
+                    i{
+                        margin-left: 5px;
+                    }
                 }
             }
         }
@@ -473,7 +537,7 @@
                     font-size: 20px;
                     line-height: 50px;
                     display: inline-block;
-                   
+
                 }
 
             }
@@ -484,7 +548,7 @@
         overflow: hidden;
         border-radius: 4px;
         margin-bottom: 40px;
-        background-color:white;
+        background-color: white;
         padding: 35px 30px;
 
         .course-table-list {
@@ -499,7 +563,7 @@
                     color: #000;
 
                     i {
-                        color:#ff5520;
+                        color: #ff5520;
                         margin-right: 7px;
                     }
                 }
@@ -511,7 +575,7 @@
             justify-content: space-between;
 
             span {
-                color:black;
+                color: black;
                 font-size: 24px;
                 font-weight: 700;
 
@@ -580,7 +644,8 @@
                             font-weight: 700;
                         }
                     }
-                    &:last-child{
+
+                    &:last-child {
                         border: none;
                         padding-bottom: 0;
                     }
