@@ -37,13 +37,6 @@ a {
 p {
     color: #555;
 }
-
-span {
-    color: #555555;
-}
-
-
-
 .owl-carousel {
     .owl-dots {
         margin-top: 15px;
@@ -58,6 +51,9 @@ span {
             display: inline-block;
             background-color: #ececed;
             transition: 0.3s all ease-in-out;
+            span{
+                display:none;
+            }
 
             &.active {
                 width: 38px;
